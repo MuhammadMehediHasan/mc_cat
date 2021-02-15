@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <%- include("./partial/head.ejs", {serverHead: false}) %> 
+    <body>
+        
+        <div class="header">
+            <div class="details">
+                <h1>MC Cat</h1>
+                <h3>Made by <a href="https://www.facebook.com/dt.owner.mehedi" target="_BLANK">Mehedi_Hasan</a></h3>
+
+                <div class="mc_desciprtion">
+                    A simple MC tool for gathering Minecraft Server Information!
+                </div>
+            </div>
+
+            <div class="input_group">
+                <p>Enter The IP:</p>
+                    <input type="text" class="link" placeholder="play.minecraftersbd.com">
+                    <button class="btn" onclick="go()">GO</button>
+                
+            </div>
+
+        </div>
+        <footer>Copy Right Reserve From @Mehedi_Hasan</footer>
+
+        <script>
+            function go() {
+            const link = document.querySelector('.link').value;
+            if(!link) {
+                alert("Please Insert An IP!");
+            } else {
+                location = "/server/" + link;
+            }
+        }
+        </script>
+    </body>
+</html>

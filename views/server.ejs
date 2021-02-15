@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("./partial/head.ejs", {serverHead: true}) %>
+<body>
+    <div class="nab">
+        <a class="s" href="/">Go Back</a>
+    </div>
+    <div class="container">
+
+
+        <div class="minecraft_box">
+            <div class="logo">
+                <img src="<%= favicon %> " alt="Server Logo">
+            </div>
+
+            <div class="description">
+                <div class="host_name">
+                    <%= host %>
+                </div>
+                <hr>
+                <div class="descriptionText">
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="minecraft_box">
+            <div class="player">Active Player <span class="active_player"><%=onlinePlayers%> /  <%= maxPlayers %></span></div>
+        </div>
+        <div class="minecraft_box">
+            <div class="version">Version: <%= version %> </div>
+        </div>
+
+
+    </div>
+
+    
+        <script>
+            let desc = `<%= description.descriptionText %>`.trim();
+            document.querySelector('.descriptionText').innerHTML = renderMCColor(desc);
+        </script>
+
+</body>
+</html>

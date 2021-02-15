@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap');
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+
+
+    /* background-image: url("./dirt.jpg"); */
+
+
+
+}
+
+@font-face {
+    src: url("../fonts/mc.otf");
+    font-family: "MC";
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    background-color: #242424;
+    flex-direction: column;
+}
+
+.container > .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.minecraft_box  {
+    font-family: "MC";
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(236, 236, 236);
+    padding: 0;
+    border-radius: .4rem;
+    margin-bottom: 1rem;
+}
+
+.minecraft_box > .logo {
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+}
+
+.description  {
+    flex: 2;
+    margin: 0 1rem;
+}
+
+
+
+
+.description > .host_name {
+    font-size: 1.5rem;
+}
+
+.description > hr {
+    margin: .3rem 0;
+    border: 1px solid #dadada;
+}
+
+
+
+normal { 
+    font-weight: lighter!important;
+    text-decoration: none;
+}
+
+
+
+
+.header {
+    background-color: #dadada;
+    padding: 2rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("../images/building.jpg");
+    color: #dadada;
+    align-items: center;
+}
+.details {
+    text-align: center;
+    margin-bottom: 14rem;
+}
+.details > h1 {
+    font-size: 5rem;
+    margin: 0;
+}
+.details >  h3 {
+    font-size: 1.3rem;
+    font-weight: lighter;
+    margin: 0;
+    margin-bottom: 5rem;
+}
+.details > h3 > a {
+    text-decoration: none;
+    color: white;
+
+}
+.details > h3 > a:hover {
+    text-decoration: none;
+    color: rgb(199, 199, 199);
+}
+
+
+.input_group {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input_group > p {
+    font-size: 2rem;
+    text-align: center;
+}
+.input_group > .link {
+    border: 1.5px solid #dadada;
+    padding: .4rem;
+    font-size: 1.3rem;
+    font-family: "MC";
+    background-color: transparent;
+    border-radius: .3rem;
+    outline: none;
+    width: 100%;
+    text-align: center;
+    color: white;
+    transition: border-color .2s ease-in-out;
+}
+.input_group > .link:hover {
+    border-color: gray;
+}
+.input_group > .link:focus {
+    border-color: tomato;
+}
+
+.mc_description {
+    font-weight: 300;
+    letter-spacing: 5px;
+    
+}
+
+.input_group > .btn {
+    border: 1px solid #dadada;
+    
+    font-family: "MC";
+    padding: .4rem 2rem;
+    font-size: 1.3rem;
+    text-align: center;
+    outline: none;
+    background-color: #dadada;
+    border-radius: .3rem;
+    margin-top: 1rem;
+    transition: background-color .2s ease-in-out;
+}
+
+.input_group > .btn:hover {
+    background-color: rgb(177, 177, 177);
+    border-color: rgb(177, 177, 177);
+}
+.input_group > .btn:active {
+    background-color: tomato;
+    border-color: tomato
+}
+
+footer {
+    background-color: rgb(27, 27, 27);
+    padding: .4rem;
+    text-align: center;
+    color: #dadada;
+    font-weight: 300;
+}
+
+
+.player, .version {
+    padding: .4rem;
+}
+
+.nab {
+    position: absolute;
+    padding: 5rem;
+    
+}
+
+.nab > .s {
+    background-color: #dadada;
+    padding: .5rem;
+    border-radius: .3rem;
+    text-decoration: none;
+    color: #242424;
+}
